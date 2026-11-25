@@ -13,6 +13,11 @@ python app.py
 ```
 Open http://127.0.0.1:5000 in your browser.
 
+<img width="1064" height="630" alt="workout-meals" src="https://github.com/user-attachments/assets/0e82df02-df94-4f9f-a97b-b767ecfcf6b6" />
+<img width="1434" height="654" alt="dashboard-overview" src="https://github.com/user-attachments/assets/43dd4f11-bbb9-4a9a-ac74-5a2317b81f3e" />
+<img width="1059" height="636" alt="nutrients" src="https://github.com/user-attachments/assets/b4345bb7-e0af-4d53-901a-5fe3bc32fed7" />
+
+
 ## Test the logic
 ```bash
 python test_planner.py
