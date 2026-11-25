@@ -23,5 +23,8 @@ python test_planner.py
 - `app.py`      : Flask server with POST /api/plan
 - `static/`     : index.html, style.css, script.js
 
-## Demo video
-[Watch the 30-second explainer](docs/fitness-planner-explainer.mp4)
+
+
+https://github.com/user-attachments/assets/a34a7e59-0e06-47b7-a7b5-dff972fe914e
+
+
