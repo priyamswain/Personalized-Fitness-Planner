@@ -22,3 +22,6 @@ python test_planner.py
 - `planner.py`  : all calculations (BMR, calories, macros, water, nutrients, workouts)
 - `app.py`      : Flask server with POST /api/plan
 - `static/`     : index.html, style.css, script.js
+
+## Demo video
+[Watch the 30-second explainer](docs/fitness-planner-explainer.mp4)
