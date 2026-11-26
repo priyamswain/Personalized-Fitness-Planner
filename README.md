@@ -33,3 +33,6 @@ python test_planner.py
 https://github.com/user-attachments/assets/a34a7e59-0e06-47b7-a7b5-dff972fe914e
 
 
+
+## Live demo
+Try it in your browser: https://priyamswain.github.io/Personalized-Fitness-Planner/
