@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FitPlan | Personal fitness planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#2F6BFF"/>
+        <path d="M5 17h6l3-7 4 13 3-6h6" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>FitPlan</span>
+    </div>
+    <p class="side-intro">Enter your details and get a workout week, calorie target, nutrients and water goal.</p>
+
+    <form id="form" novalidate>
+      <fieldset>
+        <legend>Gender</legend>
+        <div class="seg">
+          <label><input type="radio" name="gender" value="male" checked><span>Male</span></label>
+          <label><input type="radio" name="gender" value="female"><span>Female</span></label>
+        </div>
+      </fieldset>
+
+      <div class="grid3">
+        <label class="field">Age
+          <span class="input"><input type="number" name="age" min="14" max="80" value="22" required><i>yrs</i></span>
+        </label>
+        <label class="field">Height
+          <span class="input"><input type="number" name="height_cm" min="120" max="230" value="170" required><i>cm</i></span>
+        </label>
+        <label class="field">Weight
+          <span class="input"><input type="number" name="weight_kg" min="30" max="250" step="0.1" value="65" required><i>kg</i></span>
+        </label>
+      </div>
+
+      <fieldset>
+        <legend>Meal type</legend>
+        <div class="seg">
+          <label><input type="radio" name="meal_type" value="veg" checked><span>Vegetarian</span></label>
+          <label><input type="radio" name="meal_type" value="nonveg"><span>Non-veg</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Exercise level</legend>
+        <div class="seg">
+          <label><input type="radio" name="intensity" value="beginner" checked><span>Beginner</span></label>
+          <label><input type="radio" name="intensity" value="intermediate"><span>Intermediate</span></label>
+          <label><input type="radio" name="intensity" value="advanced"><span>Advanced</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Goal</legend>
+        <div class="seg">
+          <label><input type="radio" name="goal" value="lose"><span>Lose fat</span></label>
+          <label><input type="radio" name="goal" value="maintain" checked><span>Maintain</span></label>
+          <label><input type="radio" name="goal" value="gain"><span>Build muscle</span></label>
+        </div>
+      </fieldset>
+
+      <p id="error" class="error" role="alert" hidden></p>
+      <button type="submit" class="primary">Create my plan</button>
+    </form>
+  </aside>
+
+  <main class="main">
+    <div id="results" aria-live="polite">
+      <section class="empty">
+        <svg viewBox="0 0 120 60" width="120" height="60" aria-hidden="true">
+          <path d="M4 34h26l12-24 18 46 14-30 10 8h32" fill="none" stroke="#2F6BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h2>Your plan will appear here</h2>
+        <p>Fill in your details on the left and choose Create my plan.</p>
+      </section>
+    </div>
+  </main>
+</div>
+<script src="planner.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
